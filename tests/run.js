@@ -489,7 +489,7 @@ function finalize(err, results) {
 
 function test(cmd) {
     var series = [];
-    cmd.logLevel = cmd.logLevel || 'WARN';
+    cmd.logLevel = cmd.logLevel || 'debug';
     // Default to all tests
 
     cmd.browser = cmd.browser || 'firefox';
