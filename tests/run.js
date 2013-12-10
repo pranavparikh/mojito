@@ -492,7 +492,7 @@ function test(cmd) {
     cmd.logLevel = cmd.logLevel || 'debug';
     // Default to all tests
 
-    cmd.browser = cmd.browser || 'firefox';
+    cmd.browser = 'firefox';
     cmd.unitPath = path.resolve(cwd, cmd.unitPath || cmd.path || './unit');
     cmd.funcPath = path.resolve(cwd, cmd.funcPath || cmd.path || './func');
     if (cmd.reportFolder) {
